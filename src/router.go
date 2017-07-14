@@ -11,6 +11,7 @@ func initRouter() *gin.Engine {
 	router.GET("/", IndexApi)
 
 	router.POST("/release", AddReleaseApi)
+	router.POST("/releases", GetReleasesApi)
 	router.GET("/release/:id", GetReleaseApi)
 
 	router.POST("/product", AddProductApi)
