@@ -19,10 +19,12 @@ func (sr *ScRelease) AddRelaseAndUpdateProduct(db *sql.DB) error {
 
 	// sql insert query, primary key provided by autoincrement
 	const sqlstr = `INSERT INTO emind_software_center.sc_release (` +
-		`product_ID, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date` +
+		`product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date` +
 		`) VALUES (` +
-		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
+		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
 		`)`
+
+	const sqlstr1 = `SELECT product_name FROM sc_product WHERE ID = ?`
 
 	const sqlstr2 = `UPDATE emind_software_center.sc_product SET ` +
 		`release_ID = ?, icon_url = ? ` +
@@ -34,8 +36,11 @@ func (sr *ScRelease) AddRelaseAndUpdateProduct(db *sql.DB) error {
 	}
 	defer tx.Rollback()
 	// run query
-	XOLog(sqlstr, sr.ProductID, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
-	res, err := tx.Exec(sqlstr, sr.ProductID, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
+	if err = tx.QueryRow(sqlstr1, sr.ProductID).Scan(&sr.ProductName); err != nil {
+		return err
+	}
+	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
+	res, err := tx.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
 	if err != nil {
 		return err
 	}
@@ -72,7 +77,7 @@ func ScReleaseByIDs(db *sql.DB, ids []uint) ([]*ScRelease, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`product_ID, version, icon_url, download_url, changelog, package_size, package_type ` +
+		`product_ID, version, product_name, icon_url, download_url, changelog, package_size, package_type ` +
 		`FROM emind_software_center.sc_release ` +
 		`WHERE ID = ?`
 
@@ -90,7 +95,7 @@ func ScReleaseByIDs(db *sql.DB, ids []uint) ([]*ScRelease, error) {
 			_exists: true,
 		}
 
-		err = stmt.QueryRow(id).Scan(&sr.ProductID, &sr.Version, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType)
+		err = stmt.QueryRow(id).Scan(&sr.ProductID, &sr.Version, &sr.ProductName, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType)
 		if err != nil {
 			continue
 			//return nil, err

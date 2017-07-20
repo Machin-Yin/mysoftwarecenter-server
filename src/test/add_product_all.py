@@ -25,7 +25,7 @@ while 1:
 
     for line in lines:
         line = line.strip('\n     ')
-        (p1, p2, p3, p4, p5, p6, p7, p8) = (line.split('|'))
+        (p1, p2, p3, p4, p5, p6, p7, p8 ,p9) = (line.split('|'))
         if p3 == '':
             p3 = 'Other'
         subprocess.call(["./add_product.sh", p1, p2, cs[p3], p4, p5])

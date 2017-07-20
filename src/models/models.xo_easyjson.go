@@ -238,6 +238,8 @@ func easyjson91a2f4f5DecodeModels2(in *jlexer.Lexer, out *ScRelease) {
 			out.ID = uint(in.Uint())
 		case "product_ID":
 			out.ProductID = uint(in.Uint())
+		case "product_name":
+			out.ProductName = string(in.String())
 		case "version":
 			out.Version = string(in.String())
 		case "icon_url":
@@ -285,6 +287,14 @@ func easyjson91a2f4f5EncodeModels2(out *jwriter.Writer, in ScRelease) {
 		first = false
 		out.RawString("\"product_ID\":")
 		out.Uint(uint(in.ProductID))
+	}
+	if in.ProductName != "" {
+		if !first {
+			out.RawByte(',')
+		}
+		first = false
+		out.RawString("\"product_name\":")
+		out.String(string(in.ProductName))
 	}
 	if in.Version != "" {
 		if !first {

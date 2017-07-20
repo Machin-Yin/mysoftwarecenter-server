@@ -46,6 +46,7 @@ CREATE TABLE `sc_product` (
 CREATE TABLE `sc_release` (
 	`ID` int(11) unsigned NOT NULL AUTO_INCREMENT,
 	`product_ID` int(11) unsigned NOT NULL,
+	`product_name` varchar(255) NOT NULL,
 	`version` varchar(255) NOT NULL,
 	`icon_url` varchar(255) NOT NULL,
 	`download_url` text NOT NULL,

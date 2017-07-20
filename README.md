@@ -4,14 +4,14 @@
 
 | 产品ID | 当前ReleaseID | 分类ID | 图标URL (同Release) | 产品名 | 厂家名 | 厂家主页 | 产品说明 | 产品总评分 | 评分数量 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--| :--- | :--- |
-| ProductID | ReleaseID |  CategoriesID | IconURL | ProductName | VendorName | URL | ProductDescription | ProductGrade | GradeCount |
+| ID | ReleaseID |  CategoriesID | IconURL | ProductName | VendorName | URL | ProductDescription | ProductGrade | GradeCount |
 
 ### 产品发布表
 **sc_release**
 
-| 发布ID | 产品ID | 版本 | 图标URL | 下载URL | 更新记录 | 包类型 | 安装包大小 | 发布评分 |评分数量 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ReleaseID | ProductID | Version | IconURL | DownloadURL | ChangeLog | PackageType | PackageSize | ReleaseGrade | GradeCount |
+| 发布ID | 产品ID | 产品名 | 版本 | 图标URL | 下载URL | 更新记录 | 包类型 | 安装包大小 | 发布评分 |评分数量 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| ID | ProductID | ProductName | Version | IconURL | DownloadURL | ChangeLog | PackageType | PackageSize | ReleaseGrade | GradeCount |
 
 ### 用户评论表
 **sc_comment**
