@@ -1,150 +1,81 @@
-Anjuta|在集成开发环境中开发软件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.anjuta.org/|anjuta|2:3.22.0-3|4785|全新视觉
-蓝牙|配置蓝牙设定|GTK|Clement Lefebvre <root@linuxmint.com>||bluetooth|1.1.5|1805|全新视觉
-蓝牙传送|通过蓝牙设备发送文件|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/GnomeBluetooth|bluetooth|3.20.1-1|1156|全新视觉
-光盘刻录|创建及复制 CD/DVD|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Brasero|brasero|3.12.1-4|1096|全新视觉
-CD/DVD 创建器|创建 CD/DVD|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Brasero|system-file-manager|3.12.1-4|1096|全新视觉
-dconf 系统配置编辑器|便捷地编辑您的系统设置|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/dconf|dconf-editor|3.22.3-1|1346|全新视觉
-TeamViewer 12|Remote control and meeting solution.|Network|TeamViewer GmbH <service@teamviewer.com>|http://www.teamviewer.com|teamviewer|12.0.71510|35208|全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通全新视觉，简约界面乐享沟通全新视觉，简约界面乐享沟通全新皮肤引擎全新视觉盛宴QQ大视频视频聊天更大更清晰,聊天窗口个性动作互动方式更多样QQ聊天装扮，聊天窗口与众不同,空间编辑器新增记事本，双击头像直接开启,自定义好友上线提醒，实时关注亲密好友,QQ锁独立密码，隐私保护更方便安全!更换头像界面优化自定义头像更换更便捷!
-crossover|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-UXTerm|standard terminal emulator for the X window system|System|Debian X Strike Force <debian-x@lists.debian.org>|http://invisible-island.net/xterm/xterm.html|xterm-color|327-2|1872|全新视觉
-xterm|standard terminal emulator for the X window system|System|Debian X Strike Force <debian-x@lists.debian.org>|http://invisible-island.net/xterm/xterm.html|xterm-color|327-2|1872|全新视觉
-D-Feet|调试 D-Bus 应用程序|GNOME|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/DFeet|d-feet|0.3.11-3|560|全新视觉
-ImageMagick (color depth=q16)|Display and edit image files|Graphics|ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>|http://www.imagemagick.org/|display-im6.q16|8:6.9.7.4+dfsg-11|739|全新视觉
-驱动工具|驱动安装工具|System|cuixueting <cuixueting@emindlinux.com.cn>|<insert the upstream URL, if relevant>|/usr/share/driver-machine/driver-machine|1.2|300|全新视觉
-系统信息|快速查看系统信息|GTK|aqz <aqz@unknown>|<insert the upstream URL, if relevant>|start-here|1.4|83|全新视觉
-月光宝盒|系统备份还原工具|System|cuixueting <cuixueting@emindlinux.com.cn>|<insert the upstream URL, if relevant>|/usr/share/emd-time-machine-sys/emd-time-machine|2.1|358|全新视觉
-emindprinter|快速访问一铭云打印客户端|System|wufeiyun <wufeiyun@emindsoft.com.cn>|http://git.emindsoft.com.cn/emindos/EmindCloudPrinter|/usr/share/emindprinter/img/printer.png|1.0.5|170|全新视觉
-empathy|使用 Google Talk、Facebook、MSN 以及许多其它聊天服务|GNOME|Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Empathy|empathy|3.12.12-4|3304|全新视觉
-图像查看器|浏览及旋转图像|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/EyeOfGnome|eog|3.20.5-1+b1|10582|全新视觉
-文档查看器|查看多页文档|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Evince|evince|3.22.1-3|1363|全新视觉
-打印预览|打印前预览|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Evince|document-print-preview|3.22.1-3|1363|全新视觉
-文件管理器|浏览文件系统|Utility|Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>|http://www.xfce.org|system-file-manager|0.10.7-1|289|全新视觉
-邮件阅读器|阅读您的邮件|Network|Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>|http://www.xfce.org|internet-mail|0.10.7-1|289|全新视觉
-首选应用程序|首选应用程序(网络浏览器、邮件阅读器和终端模拟器)|XFCE|Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>|http://www.xfce.org|preferences-desktop-default-applications|0.10.7-1|289|全新视觉
-终端模拟器|使用命令行|Utility|Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>|http://www.xfce.org|utilities-terminal|0.10.7-1|289|全新视觉
-网络浏览器|浏览网络|Network|Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>|http://www.xfce.org|web-browser|0.10.7-1|289|全新视觉
-Fcitx Config Tool|Fcitx GUI Config Tool|Settings|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|http://www.fcitx-im.org|fcitx|0.4.8-3+b1|127|全新视觉
-Fcitx 配置|修改 Fcitx 配置|Settings|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|https://github.com/fcitx/fcitx|fcitx|1:4.2.9.1-6|628|全新视觉
-fcitx|启动输入法|System|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|https://github.com/fcitx/fcitx|fcitx|1:4.2.9.1-6|628|全新视觉
-Fcitx 皮肤安装器|Fcitx 皮肤的安装器|Utility|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|https://github.com/fcitx/fcitx|fcitx|1:4.2.9.1-6|628|全新视觉
-firefox|Browse the World Wide Web|Network|Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>||firefox|50.1.0-1|107385|全新视觉
-galculator|执行简单和科学级别的计算|Utility|Dmitry Smirnov <onlyjob@debian.org>|http://galculator.mnim.org/|galculator|2.1.4-1+b1|1477|全新视觉
-配置编辑器|直接编辑您的整个配置数据库|GNOME|Josselin Mouette <joss@debian.org>||gconf-editor|3.0.1-3|2898|全新视觉
-访问提示|解锁密码和其他私密内容的访问权限|Other|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/GnomeKeyring|security-medium|3.20.0-5.1|1298|全新视觉
-GDebi 软件包安装程序|安装和查看软件包|System|Ubuntu Developers <ubuntu-dev-team@lists.alioth.debian.org>||gnome-mime-application-x-deb|0.9.5.7+nmu1|165|全新视觉
-Geary 邮件|发送并接收邮件|GNOME|Vincent Cheng <vcheng@debian.org>|https://wiki.gnome.org/Apps/Geary|geary|0.11.3-1|6139|全新视觉
-Geary 邮件|发送并接收邮件|GNOME|Vincent Cheng <vcheng@debian.org>|https://wiki.gnome.org/Apps/Geary|geary|0.11.3-1|6139|全新视觉
-Where am I?|Find your current location|Other|Laurent Bigonville <bigon@debian.org>|http://www.freedesktop.org/wiki/Software/GeoClue|mark-location-symbolic|2.4.5-1|360|全新视觉
-Keyboard Layout|Preview keyboard layouts|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-keyboard|3.22.0.1-1+b1|28|全新视觉
-Root 终端|以 root 用户身份打开一个终端，使用 gksu 询问密码|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.nongnu.org/gksu|gksu-root-terminal|2.0.2-9+b1|289|全新视觉
-glade|创建或打开 GTK+ 程序用户界面设计|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://glade.gnome.org/|glade|3.20.0-2|2209|全新视觉
-背景|将背景图片改为一张壁纸或照片|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-wallpaper|1:3.22.2-3|6088|全新视觉
-蓝牙|开关蓝牙及连接您的设备|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||bluetooth|1:3.22.2-3|6088|全新视觉
-计算器|执行算术、科学或财务计算|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Calculator|accessories-calculator|3.22.3-1|5558|全新视觉
-色彩|校准显示器、相机、打印机等设备的色彩|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-color|1:3.22.2-3|6088|全新视觉
-日期和时间|改变日期、时间和时区|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-system-time|1:3.22.2-3|6088|全新视觉
-磁盘映像挂载器|挂载磁盘映像|Other|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|http://git.gnome.org/cgit/gnome-disk-utility/|drive-removable-media|3.22.1-1|6050|全新视觉
-磁盘映像写入器|将磁盘映像写入到设备|Other|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|http://git.gnome.org/cgit/gnome-disk-utility/|drive-removable-media|3.22.1-1|6050|全新视觉
-显示|选择如何使用接入的显示器和投影仪|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-display|1:3.22.2-3|6088|全新视觉
-详细信息|查看系统信息|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||applications-system|1:3.22.2-3|6088|全新视觉
-键盘|查看和更改快捷并设置打字偏好|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||input-keyboard|1:3.22.2-3|6088|全新视觉
-鼠标和触摸板|改变鼠标和触摸板灵敏度，并选择右手或左手习惯|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||input-mouse|1:3.22.2-3|6088|全新视觉
-网络|控制连接到互联网的方式|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||network-workgroup|1:3.22.2-3|6088|全新视觉
-通知|控制显示的通知种类及内容|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-system-notifications|1:3.22.2-3|6088|全新视觉
-在线帐号|连接在线帐号并决定如何使用|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||goa-panel|1:3.22.2-3|6088|全新视觉
-电源|查看电池状态并更改省电设置|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||gnome-power-manager|1:3.22.2-3|6088|全新视觉
-打印机|添加打印机，查看打印任务和管理打印|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||printer|1:3.22.2-3|6088|全新视觉
-隐私|保护个人信息并控制他人可见的信息|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-system-privacy|1:3.22.2-3|6088|全新视觉
-区域和语言|选择您的显示语言、格式、键盘布局和输入源|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-locale|1:3.22.2-3|6088|全新视觉
-搜索|控制在活动总览中显示哪些程序的搜索结果|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-system-search|1:3.22.2-3|6088|全新视觉
-共享|控制想要与其他用户共享的内容|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-system-sharing|1:3.22.2-3|6088|全新视觉
-软件已安装|将选中软件安装到系统上|System|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Software|system-software-install|3.22.5-1|1555|全新视觉
-声音|更改音频音量、音频输入输出和事件声音|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||multimedia-volume-control|1:3.22.2-3|6088|全新视觉
-系统日志|查看或监视系统日志文件|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Attic/GnomeUtils|logview|3.9.90-4+b1|2365|全新视觉
-系统监视器|查看当前进程及监视系统状态|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/SystemMonitor|utilities-system-monitor|3.22.2-1|3870|全新视觉
-GNOME 系统监视器|查看当前进程及监视系统状态|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/SystemMonitor|utilities-system-monitor|3.22.2-1|3870|全新视觉
-优化工具|优化 GNOME 3 高级设置|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/GnomeTweakTool|gnome-tweak-tool|3.22.0-1|1010|全新视觉
-通用辅助功能|辅助视觉、听觉、打字和指点操作|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-accessibility|1:3.22.2-3|6088|全新视觉
-用户|添加或删除用户及更改密码|System|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||system-users|1:3.22.2-3|6088|全新视觉
-个人文件共享|如果已启用则启动个人文件共享|Other|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||folder-remote|3.18.3-1+b1|547|全新视觉
-Wacom 手写板|为绘图用平板设备设置按键映射并调整触摸笔灵敏度|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||input-tablet|1:3.22.2-3|6088|全新视觉
-谷哥浏览器|访问互联网|Network|Chrome Linux Team <chromium-dev@chromium.org>||google-chrome|54.0.2840.100-1|173771|全新视觉
-GParted|创建、重新组织或删除分区|GNOME|Phillip Susi <psusi@ubuntu.com>|http://gparted.sourceforge.net|gparted|0.25.0-1+b1|6788|全新视觉
-图像查看器|轻松查看数码相片和图片|Graphics|Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>|http://www.lxde.org/|gpicview|0.2.5-2+b1|640|全新视觉
-引导编辑器|自定义引导编辑程序 (GRUB2 或者BURG)|System|Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>|https://launchpad.net/grub-customizer|grub-customizer|5.0.6-1|6814|全新视觉
-GTK Demo|GTK+ code examples and demonstrations|Development|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.gtk.org/|gtk3-demo|3.22.11-1|4099|全新视觉
-Icon Browser|An application that shows themed icons|Development|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.gtk.org/|gtk3-icon-browser|3.22.11-1|4099|全新视觉
-Widget Factory|A showcase for GTK+ widgets, designed for testing themes.|Development|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.gtk.org/|gtk3-widget-factory|3.22.11-1|4099|全新视觉
-gvim|编辑文本文件|Utility|Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>|http://www.vim.org/|gvim|2:8.0.0197-4|227|全新视觉
-Reactivate HP LaserJet 1018/1020 after reloading paper|Click the button in this program when your printer ran out of paper and you have refilled the paper|System|Debian Printing Team <debian-printing@lists.debian.org>|http://foo2zjs.rkkda.com/|/usr/share/pixmaps/hplj1020_icon.png|20160902dfsg0-2|2480|全新视觉
-输入法|设定键盘输入模式|Settings|Osamu Aoki <osamu@debian.org>||input-keyboard|0.30-1|381|全新视觉
-GNOME MPV|MPV 的 GTK 前端程序|GTK|Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>|https://github.com/gnome-mpv/gnome-mpv|gnome-mpv|0.11-1|428|全新视觉
-记事本|简易文字编辑器|GTK|Paulo Roberto Alves de Oliveira (aka kretcheu) <kretcheu@gmail.com>|http://tarot.freeshell.org/leafpad/|leafpad|0.8.18.1-5|454|全新视觉
-libreOffice|本办公生产套件与开放的 ODF 文档格式标准兼容。由 The Document Foundation 提供支持。|Office|Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>|http://www.libreoffice.org|libreoffice-startcenter|1:5.2.7-1|84102|全新视觉
-自定义外观和体验|自定义您桌面和应用程序的外观和体验|GTK|Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>|http://www.lxde.org/|preferences-desktop-theme|0.6.3-1|548|全新视觉
-终端|Terminal Emulator|System|Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>|http://www.lxde.org/|terminal|0.9.3-1|739|全新视觉
-键盘和鼠标|配置键盘、鼠标和其他输入设备|GTK|Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>|http://www.lxde.org/|input-keyboard|0.3.5-1|397|全新视觉
-显示器设置|更改屏幕分辨率和配置外部显示器|GTK|Debian LXDE Maintainers <pkg-lxde-maintainers@lists.alioth.debian.org>|http://www.lxde.org/|video-display|0.3.1-2|383|全新视觉
-mutt|Simple text-based Mail User Agent|Office|Mutt maintainers <pkg-mutt-maintainers@lists.alioth.debian.org>|http://www.mutt.org/|mutt|1.7.2-1|6104|全新视觉
-网络|配置网络设备和连接|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||preferences-system-network|3.0.0-6|9330|全新视觉
-网络|管理网络连接|Other|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|https://www.gnome.org/projects/NetworkManager/|nm-device-wireless|1.4.4-1|6070|全新视觉
-网络连接|管理或更改您的网络连接设置|GNOME|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|https://www.gnome.org/projects/NetworkManager/|preferences-system-network|1.4.4-1|6070|全新视觉
-磁盘使用情况分析器|检查文件夹大小和可用磁盘空间|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Baobab|baobab|3.22.1-1|1719|全新视觉
-Builder|为 GNOME 构建软件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Builder|org.gnome.Builder|3.22.4-1+b1|8109|全新视觉
-字符|查找和插入特殊字符的实用程序|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Design/Apps/CharacterMap|gnome-characters|3.22.0-1|1856|全新视觉
-茄子|使用摄像头拍照或录像，并加上有趣的图像效果|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Cheese|org.gnome.Cheese|3.22.1-1+b1|694|全新视觉
-GNOME Shell integration|Provides integration with GNOME Shell and the corresponding extensions repository https://extensions.gnome.org.|Other|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/GnomeShellIntegrationForChrome|org.gnome.ChromeGnomeShell|8-4|68|全新视觉
-联系人|GNOME 的联系人管理工具|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Contacts|x-office-address-book|3.22.1-1+b2|1884|全新视觉
-Devhelp|开发者帮助程序|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Devhelp|devhelp|3.22.0-1+b1|138|全新视觉
-字典|在在线字典中查阅单词定义和拼写|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Dictionary|accessories-dictionary|3.20.0-3+b1|1539|全新视觉
-磁盘|管理驱动器及媒体|GNOME|Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>|http://git.gnome.org/cgit/gnome-disk-utility/|gnome-disks|3.22.1-1|6050|全新视觉
-字体查看器|查看您系统中的字体|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>||preferences-desktop-font|3.22.0-1+b1|662|全新视觉
-文本编辑器|编辑文本文件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Gedit|gedit|3.22.0-2|1844|全新视觉
-日志|查看系统详细的事件日志|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Logs|gnome-logs|3.22.1-2|1507|全新视觉
-地图|一款简单的地图应用程序|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Maps|org.gnome.Maps|3.22.2-1|2346|全新视觉
-文件|访问和组织文件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/action/show/Apps/Nautilus|org.gnome.Nautilus|3.22.3-1|3277|全新视觉
-截图|将您的屏幕或单个窗口保存为图像|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Attic/GnomeUtils|applets-screenshooter|3.22.0-1+b1|1129|全新视觉
-软件|添加、移除或更新计算机软件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Software|org.gnome.Software|3.22.5-1|1555|全新视觉
-Sysprof|Profile an application or entire system.|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.daimi.au.dk/~sandmann/sysprof/|sysprof|3.22.2-1|1698|全新视觉
-终端|使用命令行|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Terminal|utilities-terminal|3.22.2-1|1138|全新视觉
-视频|播放电影|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Videos|org.gnome.Totem|3.22.1-1|237|全新视觉
-pinta|轻松创建和编辑图像|Graphics|Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>|http://pinta-project.com/|pinta|1.6-2|2795|全新视觉
-Python (v2.7)|Python Interpreter (v2.7)|Development|Matthias Klose <doko@debian.org>||/usr/share/pixmaps/python2.7.xpm|2.7.13-2|359|全新视觉
-Python (v3.5)|Python Interpreter (v3.5)|Development|Matthias Klose <doko@debian.org>||/usr/share/pixmaps/python3.5.xpm|3.5.3-1|319|全新视觉
-Remarkable|A free, fully featured markdown editor for Linux.|GNOME|Jamie McGowan <jamiemcgowan.dev@gmail.com>||remarkable|1.87|388|全新视觉
-remmina|连接到远程桌面|GTK|Jörg Frings-Fürst <debian@jff-webhosting.net>|http://www.remmina.org/|remmina|1.1.2-4|352|全新视觉
-报告漏洞|向 Debian 缺陷跟踪系统报告漏洞|System|Reportbug Maintainers <reportbug-maint@lists.alioth.debian.org>|http://alioth.debian.org/projects/reportbug/|debian-swirl|7.1.7|255|全新视觉
-服务|配置要在系统启动时使用哪些服务|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||network-server|3.0.0-6|9330|全新视觉
-共享的文件夹|配置哪些文件夹可共享给网络邻居|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||folder-remote|3.0.0-6|9330|全新视觉
-shotwell|Organize your photos|Graphics|Jörg Frings-Fürst <debian@jff-webhosting.net>|https://wiki.gnome.org/Apps/Shotwell|shotwell|0.25.4+really0.24.5-0.1|7902|全新视觉
-扫描易|扫描文档|GNOME|Jörg Frings-Fürst <debian@jff-webhosting.net>|https://launchpad.net/simple-scan|scanner|3.23.2-1|1973|全新视觉
-Additional Drivers|Configure third-party and proprietary drivers|XFCE|Julian Andres Klode <jak@debian.org>||jockey|0.96.20.2-1|365|全新视觉
-SoftwareUpdates|设定可安装和升级的源|GNOME|Julian Andres Klode <jak@debian.org>||software-properties|0.96.20.2-1|365|全新视觉
-新立得软件包管理器|安装，删除和升级软件包|PackageManager|Michael Vogt <mvo@debian.org>|http://www.nongnu.org/synaptic/|synaptic|0.84.2|7793|全新视觉
-Synergy|Share your keyboard and mouse over a network|Utility|Nick Bolton <nick@symless.com>||/usr/share/icons/synergy.ico|1.9.0|30|全新视觉
-时间和日期|更改系统时间、日期和时区|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||time-admin|3.0.0-6|9330|全新视觉
-桌面搜索|在计算机上用 Tracker 按名称或内容查找需要的内容|GTK|Michael Biebl <biebl@debian.org>|https://wiki.gnome.org/Projects/Tracker|system-search|1.10.5-1|923|全新视觉
-搜索和索引|配置 Tracker 文件索引|Settings|Michael Biebl <biebl@debian.org>|https://wiki.gnome.org/Projects/Tracker|tracker|1.10.5-1|923|全新视觉
-软件更新|显示并安装可用更新|System|Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>||system-software-update|1:16.10.6|1013|全新视觉
-用户和组|添加或删除用户和组|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||config-users|3.0.0-6|9330|全新视觉
-vim|编辑文本文件|Utility|Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>|http://www.vim.org/|gvim|2:8.0.0197-4|275|全新视觉
-桌面共享|GNOME 桌面共享服务器|Other|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/Vino|preferences-desktop-remote-desktop|3.22.0-1|2256|全新视觉
-virtualbox|Run several virtual systems on a single host computer|Emulator|Oracle Corporation <info@virtualbox.org>||virtualbox|5.1.18-114002~Debian~stretch|157534|全新视觉
-vlc|为您读取、捕获或发送多媒体流|AudioVideo|Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>|http://www.videolan.org/vlc/|vlc|2.2.6-1~deb9u1|218|全新视觉
-WmZS 表格|使用WPS表格分析、管理数据|Office|WPS Office Community Team <wps_linux@kingsoft.com>|http://wps-community.org|wps-office-etmain|10.1.0.5885.professional.sw.withsn|736060|全新视觉
-卸载|卸载WPS Office|Uninstall|WPS Office Community Team <wps_linux@kingsoft.com>|http://wps-community.org|wps-office-uninstall|10.1.0.5885.professional.sw.withsn|736060|全新视觉
-WPS 演示|使用 WPS 演示编辑、播放演示文稿|Office|WPS Office Community Team <wps_linux@kingsoft.com>|http://wps-community.org|wps-office-wppmain|10.1.0.5885.professional.sw.withsn|736060|全新视觉
-WPS 文字|使用 WPS 文字编写报告，排版文章|Office|WPS Office Community Team <wps_linux@kingsoft.com>|http://wps-community.org|wps-office-wpsmain|10.1.0.5885.professional.sw.withsn|736060|全新视觉
-Xware Desktop|桌面化迅雷固件|Network|Xinkai Chen <yeled.nova@gmail.com>|https://github.com/Xinkai/XwareDesktop/wiki|xware-desktop|1:0.13.20141115|5217|全新视觉
-帮助|获得 GNOME 的帮助|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Yelp|help-browser|3.22.0-1|2710|全新视觉
-zenmap|A cross-platform GUI for the Nmap Security Scanner.|Application|Debian Security Tools Packaging Team <pkg-security-team@lists.alioth.debian.org>|http://nmap.org/|/usr/share/zenmap/pixmaps/zenmap.png|7.40-1|2842|全新视觉
-zenmap (as root)|A cross-platform GUI for the Nmap Security Scanner.|Application|Debian Security Tools Packaging Team <pkg-security-team@lists.alioth.debian.org>|http://nmap.org/|/usr/share/zenmap/pixmaps/zenmap.png|7.40-1|2842|全新视觉
-emd-desktop-extra|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-desktop-mate|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-desktop-mate-extras|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-i18n-desktop-brasero|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-i18n-desktop-emindoffice|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-i18n-desktop-fcitx-configtool|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-i18n-desktop-google-chrome|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-emd-i18n-desktop-grub-customizer|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
-samba|Run Windows software with CrossOver Linux|CrossOver|CrossOver Packager <info@codeweavers.com>|http://www.codeweavers.com|http://k2.jsqq.net/uploads/allimg/1705/7_170524143440_7.jpg|16.0.6-1|489255|全新视觉，简约界面乐享沟通！- 全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！全新视觉，简约界面乐享沟通！# - 全新皮肤引擎，全新视觉盛宴! - QQ大视频，视频聊天更大更清晰! - 聊天窗口个性动作，互动方式更多样! - QQ聊天装扮，聊天窗口与众不同!　- 空间编辑器新增记事本，双击头像直接开启!　- 自定义好友上线提醒，实时关注亲密好友!　- QQ锁独立密码，隐私保护更方便安全!　- 更换头像界面优化，自定义头像更换更便捷!
+蓝牙|配置蓝牙设定|GTK|Clement Lefebvre <root@linuxmint.com>||1.1.5|1805|blueberry|blueberry|0.1|1|1.png
+蓝牙传送|通过蓝牙设备发送文件|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/GnomeBluetooth|3.20.0-1|1380|bluetooth-sendto|gnome-bluetooth|5|7|2.png
+光盘刻录|创建及复制 CD/DVD|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Brasero|3.12.1-4|1096|brasero|brasero|3|3|3.png
+XTerm|standard terminal emulator for the X window system|System|Debian X Strike Force <debian-x@lists.debian.org>|http://invisible-island.net/xterm/xterm.html|326-1|1870|xterm|xterm|5|11|4.png
+ImageMagick (display Q16)|Display and edit image files|Graphics|ImageMagick Packaging Team <pkg-gmagick-im-team@lists.alioth.debian.org>|http://www.imagemagick.org/|8:6.8.9.9-7.2+b1|223|/usr/bin/display-im6|imagemagick|5|13|5.png
+系统信息|快速查看系统信息|GTK|aqz <aqz@unknown>|<insert the upstream URL, if relevant>|1.4|83|/usr/bin/emd-systeminfo|emd-systeminfo|5|12|7.png
+月光宝盒|系统备份还原工具|System|cuixueting <cuixueting@emindlinux.com.cn>|<insert the upstream URL, if relevant>|2.5|352|/usr/bin/emd-time-machine|emd-time-machine-sys|5|1|8.png
+Emind数据库|使用Emind数据库管理数据库并创建查询和报表，以对信息进行跟踪和管理。|Office|EmindSoft|http://www.emindsoft.com.cn/|16.1.6.0.0-1|750476|emindoffice16.1 --base|emindoffice2016|2|9|9.png
+一铭云打印|快速访问一铭云打印客户端|System|wufeiyun <wufeiyun@emindsoft.com.cn>|http://git.emindsoft.com.cn/emindos/EmindCloudPrinter|1.0.45|211|/usr/bin/emindprinter|emindprinter|2|5|10.png
+一铭云扫描|快速访问一铭云扫描客户端|System|wufeiyun <wufeiyun@emindsoft.com.cn>|http://git.emindsoft.com.cn/emindos/emdscanner|1.0.8|248|/usr/bin/emindscanner|emdscanner|2|7|11.png
+归档管理器|创建并修改归档文件|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-2|960|engrampa|engrampa|4|12|12.png
+文档查看器|查看多页文档|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Evince|3.22.0-1|1362|evince|evince|3|15|13.png
+Fcitx Config Tool|Fcitx GUI Config Tool|Settings|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|http://www.fcitx-im.org|0.4.8-3|125|fcitx-config-gtk3|fcitx-config-gtk|2|8|14.png
+Fcitx|启动输入法|System|IME Packaging Team <pkg-ime-devel@lists.alioth.debian.org>|https://github.com/fcitx/fcitx|1:4.2.9.1-3|628|fcitx|fcitx-data|5|8|15.png
+Firefox|Browse the World Wide Web|Network|Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>||49.0-4|103951|/usr/lib/firefox/firefox|firefox|5|15|16.png
+访问提示|解锁密码和其他私密内容的访问权限|Other|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Projects/GnomeKeyring|3.20.0-2|1291|/usr/lib/gcr/gcr-prompter|gcr|2|15|17.png
+GDebi 软件包安装程序|安装和查看软件包|System|Ubuntu Developers <ubuntu-dev-team@lists.alioth.debian.org>||0.9.5.7|165|gdebi-gtk|gdebi|1|5|18.png
+Root 终端|以 root 用户身份打开一个终端，使用 gksu 询问密码|GTK|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|http://www.nongnu.org/gksu|2.0.2-9|460|gksu /usr/bin/x-terminal-emulator|gksu|4|15|19.png
+计算器|执行算术、科学或财务计算|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Calculator|3.22.0-1|5559|gnome-calculator|gnome-calculator|2|14|20.png
+系统监视器|查看当前进程及监视系统状态|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/SystemMonitor|3.22.0-1|3850|gnome-system-monitor|gnome-system-monitor|3|13|21.png
+网页浏览器|访问互联网|Network|Chrome Linux Team <chromium-dev@chromium.org>||54.0.2840.100-1|173771|/usr/bin/google-chrome-stable|google-chrome-stable|5|6|22.png
+GParted|创建、重新组织或删除分区|GNOME|Phillip Susi <psusi@ubuntu.com>|http://gparted.sourceforge.net|0.25.0-1|6519|gparted-pkexec|gparted|4|14|23.png
+引导编辑器|自定义引导编辑程序 (GRUB2 或者BURG)|System|Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>|https://launchpad.net/grub-customizer|5.0.6-1|6814|grub-customizer|grub-customizer|4|3|24.png
+Guake Terminal|Use the command line in a Quake-like terminal|GNOME|Daniel Echeverry <epsilon77@gmail.com>|http://guake-project.org|0.8.7-1|1223|guake|guake|3|8|25.png
+防火墙配置|配置防火墙的简单方法|GNOME|Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>|http://gufw.org/|16.10.0-1|3271|gufw|gufw|5|4|26.png
+GVim|编辑文本文件|Utility|Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>|http://www.vim.org/|2:8.0.0022-1|222|gvim -f|vim-gui-common|5|11|27.png
+Reactivate HP LaserJet 1018/1020 after reloading paper|Click the button in this program when your printer ran out of paper and you have refilled the paper|System|Debian Printing Team <debian-printing@lists.debian.org>|http://foo2zjs.rkkda.com/|20160313dfsg0-2|2480|/usr/share/foo2zjs/hplj10xx_gui.tcl|printer-driver-foo2zjs-common|4|7|28.png
+邮件|使用邮件快速阅读发送邮件或消息|Network|Christoph Goehre <chris@sigxcpu.org>|http://www.mozilla.org/thunderbird/|1:45.4.0-1|82544|icedove|icedove|4|5|29.png
+输入法|设定键盘输入模式|Settings|Osamu Aoki <osamu@debian.org>||0.29-1.4|381|im-config|im-config|5|8|30.png
+记事本|简易文字编辑器|GTK|Paulo Roberto Alves de Oliveira (aka kretcheu) <kretcheu@gmail.com>|http://tarot.freeshell.org/leafpad/|0.8.18.1-5|454|leafpad|leafpad|3|12|31.png
+关于我|设置您的个人信息|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-about-me|mate-control-center|4|15|33.png
+MATE 字典|在在线字典中查阅单词定义和拼写|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|746|mate-dictionary|mate-utils|1|2|34.png
+MATE 磁盘用量分析器|检查文件夹大小和可用磁盘空间|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|746|mate-disk-usage-analyzer|mate-utils|5|8|35.png
+显示器|更改显示器和投影仪的分辨率和位置|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-display-properties|mate-control-center|1|3|36.png
+字体查看器|预览字体|Other|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-font-viewer|mate-control-center|1|12|37.png
+键盘快捷键|为命令指定快捷键|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-keybinding-properties|mate-control-center|1|15|38.png
+键盘|设置键盘首选项|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-keyboard-properties|mate-control-center|5|13|39.png
+网络代理|设置您的网络代理首选项|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-network-properties|mate-control-center|3|2|40.png
+弹出通知|设置弹出通知首选项|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|202|mate-notification-properties|mate-notification-daemon|2|9|41.png
+面板|调用其它应用程序并提供可用来完成管理管理窗口、显示时间等功能的工具。|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-2|1609|mate-panel|mate-panel|4|7|42.png
+电源管理|配置电源管理|Settings|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|450|mate-power-preferences|mate-power-manager|4|8|43.png
+电源统计|监控电源管理|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|450|mate-power-statistics|mate-power-manager|5|9|44.png
+屏幕保护程序|设定您的屏幕保护程序首选项|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|485|mate-screensaver-preferences|mate-screensaver|2|5|45.png
+抓图|保存您桌面还是单个窗口的图像|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|746|mate-screenshot --interactive|mate-utils|1|4|46.png
+MATE 搜索工具|按照名称或内容定位此计算机中的文档和文件夹|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|746|mate-search-tool|mate-utils|5|7|47.png
+启动应用程序|选择登录时要启动的应用程序|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1.1|1711|mate-session-properties|mate-session-manager|2|6|48.png
+鼠标|设置鼠标首选项|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-mouse-properties|mate-control-center|3|8|49.png
+系统日志查看器|查看或监视系统日志文件|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|746|mate-system-log|mate-utils|5|8|50.png
+MATE 终端|使用命令行|System|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org|1.16.0-1|360|mate-terminal|mate-terminal|5|10|51.png
+主题安装程序|为桌面的各部分安装主题包|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-appearance-properties|mate-control-center|2|9|52.png
+帮助|获取 MATE 帮助|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|24166|yelp help:mate-user-guide|mate-user-guide|1|13|53.png
+窗口|设定您的窗口属性|GTK|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|853|mate-window-properties|mate-control-center|5|7|55.png
+USB 镜像写入工具|创建可启动 U 盘|GNOME|Clement Lefebvre <root@linuxmint.com>||1.2.8|149|mintstick -m iso|mintstick|5|11|56.png
+U 盘格式化工具|格式化 U 盘|GNOME|Clement Lefebvre <root@linuxmint.com>||1.2.8|149|mintstick -m format|mintstick|1|1|57.png
+主菜单|更改显示于主菜单的应用程序|Settings|MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>|http://www.mate-desktop.org/|1.16.0-1|578|mozo|mozo|0.3|4|60.png
+网易云音乐|网易云音乐|AudioVideo|Deepin Sysdev <sysdev@linuxdeepin.com>|http://www.deepin.org|1.0.0-1|110526|netease-cloud-music|netease-cloud-music|4|5|61.png
+网络|配置网络设备和连接|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||3.0.0-5|9309|network-admin|gnome-system-tools|1|13|62.png
+网络连接|管理或更改您的网络连接设置|GNOME|Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>|https://www.gnome.org/projects/NetworkManager/|1:1.2.6-9|6052|nm-connection-editor|network-manager-gnome|4|3|64.png
+茄子|使用摄像头拍照或录像，并加上有趣的图像效果|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Cheese|3.22.0-1|688|cheese|cheese|1|10|65.png
+文本编辑器|编辑文本文件|GNOME|Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>|https://wiki.gnome.org/Apps/Gedit|3.22.0-1|1844|gedit|gedit|4|11|66.png
+Python (v2.7)|Python Interpreter (v2.7)|Development|Matthias Klose <doko@debian.org>||2.7.12-3|352|/usr/bin/python2.7|python2.7|2|1|68.png
+Python (v3.5)|Python Interpreter (v3.5)|Development|Matthias Klose <doko@debian.org>||3.5.2-6|313|/usr/bin/python3.5|python3.5|1|15|69.png
+远程桌面|连接到远程桌面|GTK|Jörg Frings-Fürst <debian@jff-webhosting.net>|http://remmina.sourceforge.net/|1.1.2-3|353|remmina|remmina|2|2|70.png
+Reportbug|Report bugs to the Debian BTS|System|Reportbug Maintainers <reportbug-maint@lists.alioth.debian.org>|http://alioth.debian.org/projects/reportbug/|6.6.6|254|reportbug --exit-prompt --ui gtk2|reportbug|4|7|71.png
+Samsung Unified Driver Configurator|Scan with and configure Samsung printers|System|Samsung Unified Linux Driver Repository <http://www.bchemnet.com/suldr/>||4.01.21-1|6096|/opt/Samsung/mfp/bin/Configurator|suld-configurator-2-qt4|5|1|72.png
+Samsung Unified Driver Configurator (super user)|Configure Samsung printers and scanners|System|Samsung Unified Linux Driver Repository <http://www.bchemnet.com/suldr/>||4.01.21-1|6096|su-to-root -X -c /opt/Samsung/mfp/bin/Configurator|suld-configurator-2-qt4|1|1|73.png
+服务|配置要在系统启动时使用哪些服务|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||3.0.0-5|9309|services-admin|gnome-system-tools|5|6|74.png
+共享的文件夹|配置哪些文件夹可共享给网络邻居|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||3.0.0-5|9309|shares-admin|gnome-system-tools|4|14|75.png
+照片|整理你的照片|Graphics|Jörg Frings-Fürst <debian@jff-webhosting.net>|https://wiki.gnome.org/Apps/Shotwell|0.24.0-4|7827|shotwell|shotwell-common|3|6|76.png
+扫描易|扫描文档|GNOME|Jörg Frings-Fürst <debian@jff-webhosting.net>|https://launchpad.net/simple-scan|3.21.90-1|1941|simple-scan|simple-scan|5|8|77.png
+新立得软件包管理器|安装，删除和升级软件包|PackageManager|Michael Vogt <mvo@debian.org>|http://www.nongnu.org/synaptic/|0.83+nmu1|6930|synaptic-pkexec|synaptic|2|11|78.png
+Synergy|Share your keyboard and mouse over a network|Utility|Nick Bolton <nick@symless.com>||1.8.8|30|synergy|synergy|0.6|1|79.png
+时间和日期|更改系统时间、日期和时区|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||3.0.0-5|9309|time-admin|gnome-system-tools|3|15|80.png
+软件更新|显示并安装可用更新|System|Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>||1:16.10.6|1013|/usr/bin/update-manager|update-manager|4|1|81.png
+恢复桌面布局|恢复当前用户的桌面布局|System|sunzhigang <sunzhigang@emindsoft.com.cn>|http://www.emindsoft.com.cn|1.69|1311|/lib/firstconfig/userconfig -f|firstconfig|1|1|82.png
+用户和组|添加或删除用户和组|GNOME|Andriy Grytsenko <andrej@rep.kiev.ua>||3.0.0-5|9309|users-admin|gnome-system-tools|5|2|83.png
+Vim|编辑文本文件|Utility|Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>|http://www.vim.org/|2:8.0.0022-1|272|vim|vim-common|4|4|84.png
+媒体播放器|为您读取、捕获或发送多媒体流|AudioVideo|Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>|http://www.videolan.org/vlc/|2.2.4-6+b2|6722|/usr/bin/vlc --started-from-file|vlc|0.7|6|86.png
+WiFi热点|WiFi热点|System|Kozincew Egor <ekoincew@gmail.com>|http://code.google.com/p/wifi-hostapd-ap/|1.1.9|972|gksudo -k wifi-hostapd-ap|wifi-hostapd-ap|1|8|87.png
+libgnutls-openssl27|配置蓝牙设定|GTK|Clement Lefebvre <root@linuxmint.com>||1.1.5|1805|libgnutls-openssl27|libgnutls-openssl27|0.1|1|1.png
+libgnutls30|配置蓝牙设定|GTK|Clement Lefebvre <root@linuxmint.com>||1.1.5|1805|libgnutls30|libgnutls30|0.1|1|1.png

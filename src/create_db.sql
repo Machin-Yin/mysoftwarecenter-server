@@ -30,7 +30,9 @@ CREATE TABLE `sc_product` (
 	`url` varchar(255) NOT NULL,
 	`product_description` text NOT NULL,
 	`product_grade` int(11) unsigned NOT NULL,
-	`grade_count` int(11) unsigned NOT NULL,
+	`grade_count` float(11) unsigned NOT NULL,
+	`executable_file` varchar(255) NOT NULL,
+	`package_name` varchar(255) NOT NULL,
 	PRIMARY KEY (`ID`),
 	INDEX (`category_ID`),
 	INDEX (`product_name`),
@@ -54,8 +56,10 @@ CREATE TABLE `sc_release` (
 	`package_size` int(11) unsigned NOT NULL,
 	`package_type` tinyint unsigned NOT NULL,
 	`release_grade` int(11) unsigned NOT NULL,
-	`grade_count` int(11) unsigned NOT NULL,
+	`grade_count` float(11) unsigned NOT NULL,
 	`release_date` int unsigned NOT NULL,
+	`executable_file` varchar(255) NOT NULL,
+	`package_name` varchar(255) NOT NULL,
 	PRIMARY KEY (`ID`),
 	CONSTRAINT	`sc_release_ibfk_1` FOREIGN KEY (`product_ID`) REFERENCES `sc_product` (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

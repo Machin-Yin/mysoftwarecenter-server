@@ -11,6 +11,6 @@ while 1:
 
     for line in lines:
         line = line.strip('\n     ')
-        (p1, p2, p3, p4, p5, p6, p7, p8 , p9) = (line.split('|'))
-        subprocess.call(["./add_release.sh", p1, p7, p6, p1, p9, p8])
+        (p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12) = (line.split('|'))
+        subprocess.call(["./add_release.sh", p1, p6, p12, p1, p7, p8, p9])
 

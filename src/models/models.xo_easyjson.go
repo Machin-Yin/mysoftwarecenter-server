@@ -255,9 +255,13 @@ func easyjson91a2f4f5DecodeModels2(in *jlexer.Lexer, out *ScRelease) {
 		case "release_grade":
 			out.ReleaseGrade = uint(in.Uint())
 		case "grade_count":
-			out.GradeCount = uint(in.Uint())
+			out.GradeCount = float32(in.Float32())
 		case "release_date":
 			out.ReleaseDate = uint(in.Uint())
+		case "executable_file":
+			out.ExecutableFile = string(in.String())
+		case "package_name":
+			out.PackageName = string(in.String())
 		default:
 			in.SkipRecursive()
 		}
@@ -358,7 +362,7 @@ func easyjson91a2f4f5EncodeModels2(out *jwriter.Writer, in ScRelease) {
 		}
 		first = false
 		out.RawString("\"grade_count\":")
-		out.Uint(uint(in.GradeCount))
+		out.Float32(float32(in.GradeCount))
 	}
 	if in.ReleaseDate != 0 {
 		if !first {
@@ -367,6 +371,22 @@ func easyjson91a2f4f5EncodeModels2(out *jwriter.Writer, in ScRelease) {
 		first = false
 		out.RawString("\"release_date\":")
 		out.Uint(uint(in.ReleaseDate))
+	}
+	if in.ExecutableFile != "" {
+		if !first {
+			out.RawByte(',')
+		}
+		first = false
+		out.RawString("\"executable_file\":")
+		out.String(string(in.ExecutableFile))
+	}
+	if in.PackageName != "" {
+		if !first {
+			out.RawByte(',')
+		}
+		first = false
+		out.RawString("\"package_name\":")
+		out.String(string(in.PackageName))
 	}
 	out.RawByte('}')
 }
@@ -511,7 +531,11 @@ func easyjson91a2f4f5DecodeModels4(in *jlexer.Lexer, out *ScProduct) {
 		case "product_grade":
 			out.ProductGrade = uint(in.Uint())
 		case "grade_count":
-			out.GradeCount = uint(in.Uint())
+			out.GradeCount = float32(in.Float32())
+		case "executable_file":
+			out.ExecutableFile = string(in.String())
+		case "package_name":
+			out.PackageName = string(in.String())
 		default:
 			in.SkipRecursive()
 		}
@@ -604,7 +628,23 @@ func easyjson91a2f4f5EncodeModels4(out *jwriter.Writer, in ScProduct) {
 		}
 		first = false
 		out.RawString("\"grade_count\":")
-		out.Uint(uint(in.GradeCount))
+		out.Float32(float32(in.GradeCount))
+	}
+	if in.ExecutableFile != "" {
+		if !first {
+			out.RawByte(',')
+		}
+		first = false
+		out.RawString("\"executable_file\":")
+		out.String(string(in.ExecutableFile))
+	}
+	if in.PackageName != "" {
+		if !first {
+			out.RawByte(',')
+		}
+		first = false
+		out.RawString("\"package_name\":")
+		out.String(string(in.PackageName))
 	}
 	out.RawByte('}')
 }

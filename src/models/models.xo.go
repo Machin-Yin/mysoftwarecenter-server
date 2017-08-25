@@ -370,16 +370,18 @@ func (sc *ScComment) Delete(db XODB) error {
 
 // ScProduct represents a row from 'emind_software_center.sc_product'.
 type ScProduct struct {
-	ID                 uint   `json:"ID,omitempty" form:"ID"`                                   // ID
-	CategoryID         uint   `json:"category_ID,omitempty" form:"category_ID"`                 // category_ID
-	ReleaseID          uint   `json:"release_ID,omitempty" form:"release_ID"`                   // release_ID
-	ProductName        string `json:"product_name,omitempty" form:"product_name"`               // product_name
-	VendorName         string `json:"vendor_name,omitempty" form:"vendor_name"`                 // vendor_name
-	IconURL            string `json:"icon_url,omitempty" form:"icon_url"`                       // icon_url
-	URL                string `json:"url,omitempty" form:"url"`                                 // url
-	ProductDescription string `json:"product_description,omitempty" form:"product_description"` // product_description
-	ProductGrade       uint   `json:"product_grade,omitempty" form:"product_grade"`             // product_grade
-	GradeCount         uint   `json:"grade_count,omitempty" form:"grade_count"`                 // grade_count
+	ID                 uint    `json:"ID,omitempty" form:"ID"`                                   // ID
+	CategoryID         uint    `json:"category_ID,omitempty" form:"category_ID"`                 // category_ID
+	ReleaseID          uint    `json:"release_ID,omitempty" form:"release_ID"`                   // release_ID
+	ProductName        string  `json:"product_name,omitempty" form:"product_name"`               // product_name
+	VendorName         string  `json:"vendor_name,omitempty" form:"vendor_name"`                 // vendor_name
+	IconURL            string  `json:"icon_url,omitempty" form:"icon_url"`                       // icon_url
+	URL                string  `json:"url,omitempty" form:"url"`                                 // url
+	ProductDescription string  `json:"product_description,omitempty" form:"product_description"` // product_description
+	ProductGrade       uint    `json:"product_grade,omitempty" form:"product_grade"`             // product_grade
+	GradeCount         float32 `json:"grade_count,omitempty" form:"grade_count"`                 // grade_count
+	ExecutableFile     string  `json:"executable_file,omitempty" form:"executable_file"`         // executable_file
+	PackageName        string  `json:"package_name,omitempty" form:"package_name"`               // package_name
 
 	// xo fields
 	_exists, _deleted bool
@@ -406,14 +408,14 @@ func (sp *ScProduct) Insert(db XODB) error {
 
 	// sql insert query, primary key provided by autoincrement
 	const sqlstr = `INSERT INTO emind_software_center.sc_product (` +
-		`category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count` +
+		`category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count, executable_file, package_name` +
 		`) VALUES (` +
-		`?, ?, ?, ?, ?, ?, ?, ?, ?` +
+		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
 		`)`
 
 	// run query
-	XOLog(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount)
-	res, err := db.Exec(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount)
+	XOLog(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ExecutableFile, sp.PackageName)
+	res, err := db.Exec(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ExecutableFile, sp.PackageName)
 	if err != nil {
 		return err
 	}
@@ -447,12 +449,12 @@ func (sp *ScProduct) Update(db XODB) error {
 
 	// sql query
 	const sqlstr = `UPDATE emind_software_center.sc_product SET ` +
-		`category_ID = ?, release_ID = ?, product_name = ?, vendor_name = ?, icon_url = ?, url = ?, product_description = ?, product_grade = ?, grade_count = ?` +
+		`category_ID = ?, release_ID = ?, product_name = ?, vendor_name = ?, icon_url = ?, url = ?, product_description = ?, product_grade = ?, grade_count = ?, executable_file = ?, package_name = ?` +
 		` WHERE ID = ?`
 
 	// run query
-	XOLog(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ID)
-	_, err = db.Exec(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ID)
+	XOLog(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ExecutableFile, sp.PackageName, sp.ID)
+	_, err = db.Exec(sqlstr, sp.CategoryID, sp.ReleaseID, sp.ProductName, sp.VendorName, sp.IconURL, sp.URL, sp.ProductDescription, sp.ProductGrade, sp.GradeCount, sp.ExecutableFile, sp.PackageName, sp.ID)
 	return err
 }
 
@@ -609,18 +611,20 @@ func (sr *ScRecommend) Delete(db XODB) error {
 
 // ScRelease represents a row from 'emind_software_center.sc_release'.
 type ScRelease struct {
-	ID           uint   `json:"ID,omitempty" form:"ID"`                       // ID
-	ProductID    uint   `json:"product_ID,omitempty" form:"product_ID"`       // product_ID
-	ProductName  string `json:"product_name,omitempty" form:"product_name"`   // product_name
-	Version      string `json:"version,omitempty" form:"version"`             // version
-	IconURL      string `json:"icon_url,omitempty" form:"icon_url"`           // icon_url
-	DownloadURL  string `json:"download_url,omitempty" form:"download_url"`   // download_url
-	Changelog    string `json:"changelog,omitempty" form:"changelog"`         // changelog
-	PackageSize  uint   `json:"package_size,omitempty" form:"package_size"`   // package_size
-	PackageType  int8   `json:"package_type,omitempty" form:"package_type"`   // package_type
-	ReleaseGrade uint   `json:"release_grade,omitempty" form:"release_grade"` // release_grade
-	GradeCount   uint   `json:"grade_count,omitempty" form:"grade_count"`     // grade_count
-	ReleaseDate  uint   `json:"release_date,omitempty" form:"release_date"`   // release_date
+	ID             uint    `json:"ID,omitempty" form:"ID"`                           // ID
+	ProductID      uint    `json:"product_ID,omitempty" form:"product_ID"`           // product_ID
+	ProductName    string  `json:"product_name,omitempty" form:"product_name"`       // product_name
+	Version        string  `json:"version,omitempty" form:"version"`                 // version
+	IconURL        string  `json:"icon_url,omitempty" form:"icon_url"`               // icon_url
+	DownloadURL    string  `json:"download_url,omitempty" form:"download_url"`       // download_url
+	Changelog      string  `json:"changelog,omitempty" form:"changelog"`             // changelog
+	PackageSize    uint    `json:"package_size,omitempty" form:"package_size"`       // package_size
+	PackageType    int8    `json:"package_type,omitempty" form:"package_type"`       // package_type
+	ReleaseGrade   uint    `json:"release_grade,omitempty" form:"release_grade"`     // release_grade
+	GradeCount     float32 `json:"grade_count,omitempty" form:"grade_count"`         // grade_count
+	ReleaseDate    uint    `json:"release_date,omitempty" form:"release_date"`       // release_date
+	ExecutableFile string  `json:"executable_file,omitempty" form:"executable_file"` // executable_file
+	PackageName    string  `json:"package_name,omitempty" form:"package_name"`       // package_name
 
 	// xo fields
 	_exists, _deleted bool
@@ -647,14 +651,14 @@ func (sr *ScRelease) Insert(db XODB) error {
 
 	// sql insert query, primary key provided by autoincrement
 	const sqlstr = `INSERT INTO emind_software_center.sc_release (` +
-		`product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date` +
+		`product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date, executable_file, package_name` +
 		`) VALUES (` +
-		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
+		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
 		`)`
 
 	// run query
-	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
-	res, err := db.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
+	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName)
+	res, err := db.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName)
 	if err != nil {
 		return err
 	}
@@ -688,12 +692,12 @@ func (sr *ScRelease) Update(db XODB) error {
 
 	// sql query
 	const sqlstr = `UPDATE emind_software_center.sc_release SET ` +
-		`product_ID = ?, product_name = ?, version = ?, icon_url = ?, download_url = ?, changelog = ?, package_size = ?, package_type = ?, release_grade = ?, grade_count = ?, release_date = ?` +
+		`product_ID = ?, product_name = ?, version = ?, icon_url = ?, download_url = ?, changelog = ?, package_size = ?, package_type = ?, release_grade = ?, grade_count = ?, release_date = ?, executable_file = ?, package_name = ?` +
 		` WHERE ID = ?`
 
 	// run query
-	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ID)
-	_, err = db.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ID)
+	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName, sr.ID)
+	_, err = db.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName, sr.ID)
 	return err
 }
 
@@ -1244,7 +1248,7 @@ func ScProductsByCategoryID(db XODB, categoryID uint) ([]*ScProduct, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count ` +
+		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count, executable_file, package_name ` +
 		`FROM emind_software_center.sc_product ` +
 		`WHERE category_ID = ?`
 
@@ -1264,7 +1268,7 @@ func ScProductsByCategoryID(db XODB, categoryID uint) ([]*ScProduct, error) {
 		}
 
 		// scan
-		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount)
+		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount, &sp.ExecutableFile, &sp.PackageName)
 		if err != nil {
 			return nil, err
 		}
@@ -1283,7 +1287,7 @@ func ScProductsByProductName(db XODB, productName string) ([]*ScProduct, error) 
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count ` +
+		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count, executable_file, package_name ` +
 		`FROM emind_software_center.sc_product ` +
 		`WHERE product_name = ?`
 
@@ -1303,7 +1307,7 @@ func ScProductsByProductName(db XODB, productName string) ([]*ScProduct, error) 
 		}
 
 		// scan
-		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount)
+		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount, &sp.ExecutableFile, &sp.PackageName)
 		if err != nil {
 			return nil, err
 		}
@@ -1322,7 +1326,7 @@ func ScProductByID(db XODB, id uint) (*ScProduct, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count ` +
+		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count, executable_file, package_name ` +
 		`FROM emind_software_center.sc_product ` +
 		`WHERE ID = ?`
 
@@ -1332,7 +1336,7 @@ func ScProductByID(db XODB, id uint) (*ScProduct, error) {
 		_exists: true,
 	}
 
-	err = db.QueryRow(sqlstr, id).Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount)
+	err = db.QueryRow(sqlstr, id).Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount, &sp.ExecutableFile, &sp.PackageName)
 	if err != nil {
 		return nil, err
 	}
@@ -1348,7 +1352,7 @@ func ScProductsByVendorName(db XODB, vendorName string) ([]*ScProduct, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count ` +
+		`ID, category_ID, release_ID, product_name, vendor_name, icon_url, url, product_description, product_grade, grade_count, executable_file, package_name ` +
 		`FROM emind_software_center.sc_product ` +
 		`WHERE vendor_name = ?`
 
@@ -1368,7 +1372,7 @@ func ScProductsByVendorName(db XODB, vendorName string) ([]*ScProduct, error) {
 		}
 
 		// scan
-		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount)
+		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount, &sp.ExecutableFile, &sp.PackageName)
 		if err != nil {
 			return nil, err
 		}
@@ -1413,7 +1417,7 @@ func ScReleaseByID(db XODB, id uint) (*ScRelease, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date ` +
+		`ID, product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date, executable_file, package_name ` +
 		`FROM emind_software_center.sc_release ` +
 		`WHERE ID = ?`
 
@@ -1423,7 +1427,7 @@ func ScReleaseByID(db XODB, id uint) (*ScRelease, error) {
 		_exists: true,
 	}
 
-	err = db.QueryRow(sqlstr, id).Scan(&sr.ID, &sr.ProductID, &sr.ProductName, &sr.Version, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType, &sr.ReleaseGrade, &sr.GradeCount, &sr.ReleaseDate)
+	err = db.QueryRow(sqlstr, id).Scan(&sr.ID, &sr.ProductID, &sr.ProductName, &sr.Version, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType, &sr.ReleaseGrade, &sr.GradeCount, &sr.ReleaseDate, &sr.ExecutableFile, &sr.PackageName)
 	if err != nil {
 		return nil, err
 	}
@@ -1439,7 +1443,7 @@ func ScReleasesByProductID(db XODB, productID uint) ([]*ScRelease, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`ID, product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date ` +
+		`ID, product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date, executable_file, package_name ` +
 		`FROM emind_software_center.sc_release ` +
 		`WHERE product_ID = ?`
 
@@ -1459,7 +1463,7 @@ func ScReleasesByProductID(db XODB, productID uint) ([]*ScRelease, error) {
 		}
 
 		// scan
-		err = q.Scan(&sr.ID, &sr.ProductID, &sr.ProductName, &sr.Version, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType, &sr.ReleaseGrade, &sr.GradeCount, &sr.ReleaseDate)
+		err = q.Scan(&sr.ID, &sr.ProductID, &sr.ProductName, &sr.Version, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType, &sr.ReleaseGrade, &sr.GradeCount, &sr.ReleaseDate, &sr.ExecutableFile, &sr.PackageName)
 		if err != nil {
 			return nil, err
 		}
@@ -1694,7 +1698,7 @@ func GetScProducts(db XODB) ([]*ScProduct, error) {
 		sp := ScProduct{}
 
 		// scan
-		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount)
+		err = q.Scan(&sp.ID, &sp.CategoryID, &sp.ReleaseID, &sp.ProductName, &sp.VendorName, &sp.IconURL, &sp.URL, &sp.ProductDescription, &sp.ProductGrade, &sp.GradeCount, &sp.ExecutableFile, &sp.PackageName)
 		if err != nil {
 			return nil, err
 		}

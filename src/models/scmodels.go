@@ -19,9 +19,9 @@ func (sr *ScRelease) AddRelaseAndUpdateProduct(db *sql.DB) error {
 
 	// sql insert query, primary key provided by autoincrement
 	const sqlstr = `INSERT INTO emind_software_center.sc_release (` +
-		`product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date` +
+		`product_ID, product_name, version, icon_url, download_url, changelog, package_size, package_type, release_grade, grade_count, release_date, executable_file, package_name` +
 		`) VALUES (` +
-		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
+		`?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?` +
 		`)`
 
 	const sqlstr1 = `SELECT product_name FROM sc_product WHERE ID = ?`
@@ -39,8 +39,8 @@ func (sr *ScRelease) AddRelaseAndUpdateProduct(db *sql.DB) error {
 	if err = tx.QueryRow(sqlstr1, sr.ProductID).Scan(&sr.ProductName); err != nil {
 		return err
 	}
-	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
-	res, err := tx.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate)
+	XOLog(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName)
+	res, err := tx.Exec(sqlstr, sr.ProductID, sr.ProductName, sr.Version, sr.IconURL, sr.DownloadURL, sr.Changelog, sr.PackageSize, sr.PackageType, sr.ReleaseGrade, sr.GradeCount, sr.ReleaseDate, sr.ExecutableFile, sr.PackageName)
 	if err != nil {
 		return err
 	}
@@ -77,7 +77,7 @@ func ScReleaseByIDs(db *sql.DB, ids []uint) ([]*ScRelease, error) {
 
 	// sql query
 	const sqlstr = `SELECT ` +
-		`product_ID, version, product_name, icon_url, download_url, changelog, package_size, package_type ` +
+		` ID, product_ID, version, product_name, icon_url, download_url, changelog, package_size, package_type, executable_file, package_name ` +
 		`FROM emind_software_center.sc_release ` +
 		`WHERE ID = ?`
 
@@ -95,7 +95,7 @@ func ScReleaseByIDs(db *sql.DB, ids []uint) ([]*ScRelease, error) {
 			_exists: true,
 		}
 
-		err = stmt.QueryRow(id).Scan(&sr.ProductID, &sr.Version, &sr.ProductName, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType)
+		err = stmt.QueryRow(id).Scan(&sr.ID, &sr.ProductID, &sr.Version, &sr.ProductName, &sr.IconURL, &sr.DownloadURL, &sr.Changelog, &sr.PackageSize, &sr.PackageType, &sr.ExecutableFile, &sr.PackageName)
 		if err != nil {
 			continue
 			//return nil, err
@@ -104,4 +104,149 @@ func ScReleaseByIDs(db *sql.DB, ids []uint) ([]*ScRelease, error) {
 	}
 
 	return srs, nil
+}
+
+// ScCommentByIDs retrieves rows from 'emind_software_center.sc_comment' as a ScComment.
+//
+// Generated from index 'sc_comment_ID_pkey'.
+func ScCommentByIDs(db *sql.DB, ids []uint) ([]*ScComment, error) {
+	var err error
+
+	// sql query
+	const sqlstr = `SELECT ` +
+		`ID, product_ID, release_ID, user_ID, comment_text, comment_grade, comment_date ` +
+		`FROM emind_software_center.sc_comment ` +
+		`WHERE ID = ?`
+
+	stmt, err := db.Prepare(sqlstr)
+	if err != nil {
+		return nil, err
+	}
+	defer stmt.Close()
+
+	srs := make([]*ScComment, 0, 20)
+	for _, id := range ids {
+		// run query
+		XOLog(sqlstr, id)
+		sr := &ScComment{
+			_exists: true,
+		}
+
+		err = stmt.QueryRow(id).Scan(&sr.ID, &sr.ProductID, &sr.ReleaseID, &sr.UserID, &sr.CommentText, &sr.CommentGrade, &sr.CommentDate)
+		if err != nil {
+			continue
+			//return nil, err
+		}
+		srs = append(srs, sr)
+	}
+
+	return srs, nil
+}
+
+// ScUsers retrieves rows from 'emind_software_center.sc_user' as a ScUser.
+//
+// Generated from index 'sc_user_ID_pkey'.
+func ScUsers(db XODB) ([]*ScUser, error) {
+
+	var err error
+
+	// sql query
+	const sqlstr = `SELECT ` +
+		`* ` +
+		`FROM sc_user`
+
+	// run query
+	XOLog(sqlstr)
+	q, err := db.Query(sqlstr)
+	if err != nil {
+		return nil, err
+	}
+	defer q.Close()
+
+	// load results
+	res := []*ScUser{}
+	for q.Next() {
+		sc := ScUser{}
+
+		// scan
+		err = q.Scan(&sc.ID, &sc.UserName, &sc.AvatarURL, &sc.Mail)
+		if err != nil {
+			return nil, err
+		}
+
+		res = append(res, &sc)
+	}
+	return res, nil
+}
+
+// ScRecommends retrieves rows from 'emind_software_center.sc_recommend' as a ScRecommend.
+//
+
+func ScRecommends(db XODB) ([]*ScRecommend, error) {
+
+	var err error
+
+	// sql query
+	const sqlstr = `SELECT ` +
+		`* ` +
+		`FROM sc_recommend ORDER BY priority`
+
+	// run query
+	XOLog(sqlstr)
+	q, err := db.Query(sqlstr)
+	if err != nil {
+		return nil, err
+	}
+	defer q.Close()
+
+	// load results
+	res := []*ScRecommend{}
+	for q.Next() {
+		sc := ScRecommend{}
+
+		// scan
+		err = q.Scan(&sc.ID, &sc.Priority)
+		if err != nil {
+			return nil, err
+		}
+
+		res = append(res, &sc)
+	}
+	return res, nil
+}
+
+// ScBanners retrieves rows from 'emind_software_center.sc_banner' as a ScBanner.
+//
+
+func ScBanners(db XODB) ([]*ScBanner, error) {
+
+	var err error
+
+	// sql query
+	const sqlstr = `SELECT ` +
+		`* ` +
+		`FROM sc_banners ORDER BY priority`
+
+	// run query
+	XOLog(sqlstr)
+	q, err := db.Query(sqlstr)
+	if err != nil {
+		return nil, err
+	}
+	defer q.Close()
+
+	// load results
+	res := []*ScBanner{}
+	for q.Next() {
+		sc := ScBanner{}
+
+		// scan
+		err = q.Scan(&sc.ID, &sc.Priority)
+		if err != nil {
+			return nil, err
+		}
+
+		res = append(res, &sc)
+	}
+	return res, nil
 }
